@@ -72,7 +72,7 @@ export default function TeacherForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+    <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 text-black">
       {toast && (
         <Toast
           type={toast}

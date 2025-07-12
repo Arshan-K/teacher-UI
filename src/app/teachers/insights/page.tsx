@@ -59,7 +59,7 @@ const TeacherInsightsPage = () => {
   };
 
   return (
-    <div className="p-4">
+    <div className="p-4 text-black">
       <h1 className="text-2xl font-semibold mb-4">Teacher Insights</h1>
 
       <input
@@ -119,7 +119,7 @@ const TeacherInsightsPage = () => {
                   {day}
                 </div>
               ))}
-              {timeSlots.map((time, index) => (
+              {timeSlots.map((time) => (
                 <React.Fragment key={`row-${time}`}>
                   <div className="border p-2 text-sm font-medium">{time}</div>
                   {weekdays.map((day) => {
